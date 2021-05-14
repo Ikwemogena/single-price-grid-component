@@ -1,0 +1,161 @@
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --grayish-blue: hsl(215, 17%, 81%);
+  --light-gray: hsl(204, 43%, 93%);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-gray);
+  font-family: "Karla", sans-serif; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 80%;
+  max-width: 80rem;
+  margin-top: 10rem;
+}
+
+.up {
+  background-color: white;
+  padding: 7.5%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--cyan);
+  margin: 0 0 1.75rem 0;
+}
+h3 {
+  font-size: 1.75rem;
+  color: var(--bright-yellow);
+  font-weight: 700;
+  margin: 0 0 1.75rem 0;
+}
+.up-card p {
+  color: var(--grayish-blue);
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.month{
+  background-color: var(--cyan);
+  padding: 7.5%;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 1.75rem 0;
+}
+.month p {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.cost {
+  color: var(--light-gray);
+  font-size: 1.25rem;
+}
+
+.access {
+  margin-top: 0.75rem;
+}
+
+.dollar {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-right: 1rem;
+  color: white;
+}
+
+.btn {
+  background-color: var(--bright-yellow);
+  border-radius: 5px;
+  border: 2px solid var(--bright-yellow);
+  padding: 1.25rem 0;
+  margin-top: 3rem;
+  min-width: 80%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: white;
+  color: var(--bright-yellow);
+} 
+
+.why {
+  background-color: hsl(179, 62%, 43%, 0.9);
+  padding: 7.5%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+} 
+
+.why ul {
+  list-style: none;
+  color: var(--light-gray);
+  font-size: 1.4rem;
+}
+
+.why ul li {
+  padding: 0.25rem 0;
+}
+
+.attribution {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  color: var(--grayish-blue);
+}
+
+@media all and (min-width: 750px) {
+  .top {
+    padding: 5%;
+  }
+  .card {
+    width: 60%;
+    max-width: 80rem;
+    margin-top: 5rem;
+  }
+  .down-card {
+    display: flex;
+  }
+  .month {
+    border-bottom-left-radius: 10px;
+    width: 50%;
+    padding: 5%;
+  }
+  .why {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    width: 50%;
+    padding: 5%;
+  }
+}
